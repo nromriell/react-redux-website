@@ -1,0 +1,77 @@
+/* Color Theme Swatches in Hex */
+.Projects {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  grid-row-gap: 1vh;
+  align-content: space-around;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ProjectCellTitle {
+  background-color: transparent;
+  color: transparent;
+  overflow: hidden;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  transition: 0.15s;
+}
+
+@keyframes ProjectCellShow {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 20vw;
+  }
+}
+.ProjectCell {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  height: 0;
+  background-color: #C5D9E0;
+  background-size: cover;
+  border-radius: 3vw;
+  transition: 0.15s;
+  animation: 0.5s ease-out forwards ProjectCellShow;
+}
+.ProjectCell:hover {
+  box-shadow: 0px 0px 10px white;
+}
+.ProjectCell:hover > div {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.ProjectCell:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.ProjectCell:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.ProjectCell:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+.ProjectCell:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+.ProjectCell:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+.ProjectCell:nth-child(6) {
+  animation-delay: 0.3s;
+}
+
+/*# sourceMappingURL=Projects.css.map */

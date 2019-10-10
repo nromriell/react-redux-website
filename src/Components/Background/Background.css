@@ -1,0 +1,41 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in Hex */
+.center-text-hz {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.Background {
+  position: static;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-image: url("./Images/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+}
+.Background.Home {
+  background-position: 0 -300vh;
+}
+.Background.Projects {
+  background-position: 0 -100vh;
+}
+.Background.Blog {
+  background-position: 0 0;
+}
+
+.BackgroundOverlay {
+  position: static;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*# sourceMappingURL=Background.css.map */

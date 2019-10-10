@@ -1,0 +1,59 @@
+.Navigation {
+  width: 16rem;
+  left: -13rem;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../../Images/MenuButton.svg");
+  background-size: 15%;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+.Navigation:Hover {
+  background-size: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+}
+
+.NavigationIcon {
+  position: absolute;
+  right: -1rem;
+  top: 0.1rem;
+  width: 15%;
+  padding-top: 15%;
+  background-image: url("../../Images/MenuButton.svg");
+  background-size: contain;
+  filter: invert(0);
+}
+.NavigationIcon:focus-within {
+  opacity: 0;
+}
+
+.NavigationItem {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 65px;
+  line-height: 59px;
+  font-size: 1.5rem;
+  color: white;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-color: white;
+  border-style: solid;
+  box-sizing: border-box;
+  transition: 0.2s;
+  background-color: rgba(255, 255, 255, 0);
+}
+.NavigationItem:Hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.NavigationItem.Selected {
+  color: lightgray;
+}
+
+/*# sourceMappingURL=Navigation.css.map */

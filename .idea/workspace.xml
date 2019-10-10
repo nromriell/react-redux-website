@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c251bdfa-bcd9-4c47-b8f6-6ebb90469fde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/BoL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/BrickBuilder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/CroquetClash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/GuitarVisualizer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/HierarchyButton.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/IMG_2998.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/MenuButton.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/WerewolfRun.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/WorkingOnIt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/WorkingOnItArm.gvdesign" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/WorkingOnItArm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/heist-flight.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -195,8 +182,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="368" />
-    <option name="y" value="128" />
+    <option name="x" value="679" />
+    <option name="y" value="1173" />
     <option name="width" value="1867" />
     <option name="height" value="1285" />
   </component>
@@ -377,7 +364,7 @@
       <workItem from="1570464913091" duration="7911000" />
       <workItem from="1570473672165" duration="14305000" />
       <workItem from="1570546989939" duration="18699000" />
-      <workItem from="1570721856955" duration="4019000" />
+      <workItem from="1570721856955" duration="4491000" />
     </task>
     <task id="LOCAL-00001" summary="First commit with file structure and view swapping.">
       <created>1569262962444</created>
@@ -393,14 +380,21 @@
       <option name="project" value="LOCAL" />
       <updated>1570741610756</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added static images.">
+      <created>1570741940384</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570741940384</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103370000" />
+    <option name="totallyTimeSpent" value="103842000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="368" y="128" width="1867" height="1285" extended-state="0" />
+    <frame x="679" y="1173" width="1867" height="1285" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24439585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -430,7 +424,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit with file structure and view swapping." />
     <MESSAGE value="Added main pages, components, router, redux, SASS files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added main pages, components, router, redux, SASS files." />
+    <MESSAGE value="Added static images." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added static images." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/logo192.png" />
