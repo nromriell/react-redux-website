@@ -49,8 +49,8 @@ p {
   position: fixed;
   display: grid;
   grid-template-columns: 20vw 20vw 20vw;
-  grid-row-gap: 1vh;
-  align-content: space-around;
+  grid-row-gap: 3vh;
+  align-content: center;
   justify-content: space-around;
   left: 0;
   top: 0;
@@ -350,6 +350,7 @@ i:hover {
 .AboutMeSection {
   background-color: #ceae87;
   display: flex;
+  flex: 1;
   justify-content: space-evenly;
   flex-direction: column;
   padding: 2rem;
@@ -402,9 +403,9 @@ i:hover {
 }
 
 .WorkingOnItTitle {
-  width: 100%;
-  text-align: justify;
-  padding-left: 50%;
+  width: 50vw;
+  text-align: center;
+  padding-left: 25%;
   color: white;
   font-size: 3rem;
   position: relative;
@@ -502,7 +503,6 @@ i:hover {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: content-box;
     overflow: auto;
     margin-bottom: 5rem;
   }
