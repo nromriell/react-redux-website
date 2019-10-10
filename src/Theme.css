@@ -501,8 +501,7 @@ i:hover {
 
   .AboutMe {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    grid-template-areas: "objective" "hardskills" "softskills" "projects";
     overflow: auto;
     margin-bottom: 5rem;
   }
