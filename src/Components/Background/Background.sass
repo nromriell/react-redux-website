@@ -1,16 +1,24 @@
+@import "../../ColorScheme"
+@import "../../config"
+
 .Background
-  position: fixed
-  width: 100%
-  height: 100%
-  background-size: 100% 400vh
-  background-image: linear-gradient(to top, #FF9D00 0, #FFBF00 25%, #B9B9B9 25%, #424951 50%, #C9EFFF 50%, #0AA1FF 75%, #FFFFFF 75%, #DBDBDB 100%)
+  overflow: hidden
+  position: static
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  background-size: cover
+  background-image: url("./Images/IMG_2998.JPG")
+  background-repeat: no-repeat
+  //@include set-background(white)
   transition: 0.5s
-  z-index: -2
-  &.Home
-    background-position: 0 -300vh
-  &.AboutMe
-    background-position: 0 -200vh
-  &.MoreInfo
-    background-position: 0 -100vh
-  &.Blog
-    background-position: 0 0
+
+.BackgroundOverlay
+  overflow: hidden
+  position: fixed
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  background-color: rgba(0,0,0,0.7)

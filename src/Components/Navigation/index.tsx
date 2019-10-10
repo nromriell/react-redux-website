@@ -1,10 +1,8 @@
-import React from 'react'
-import Redux from 'redux'
-import './Navigation.css'
+import React, {Fragment} from 'react'
+import '../../Theme.css'
 import NavigationItem from "./NavigationItem";
 import {connect} from "react-redux";
 import {ViewData} from "../../Redux/Reducers";
-import NavigationIcon from "./NavigationIcon";
 
 type NavigationProps = {
   viewData:ViewData[] | null | undefined
@@ -14,10 +12,13 @@ const Navigation = ({viewData}:NavigationProps) => {
   let itemElements:React.ReactElement[] = [];
   if(viewData != null){
     itemElements = viewData.map((data)=>
-      <NavigationItem title={data.name} identifier={data.identifier}/>
+      <NavigationItem title={data.name} identifier={data.identifier} key={data.identifier}/>
     );
   }
-  return <div className="Navigation">{itemElements}</div>
+  return <Fragment>
+    <div className="Navigation hide-on-small">{itemElements}</div>
+    <div className="Navigation-Small show-on-small">{itemElements}</div>
+  </Fragment>
 };
 
 const mapStateToProps = (state:any) => {

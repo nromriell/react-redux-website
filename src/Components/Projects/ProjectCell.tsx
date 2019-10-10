@@ -1,13 +1,17 @@
 import React from 'react'
+import '../../Theme.css'
 
-type ProjectCellProps = {
+
+export type ProjectCellProps = {
     title:string;
     image:string;
+    url:string;
 }
 
-const ProjectCell = ({title,image}:ProjectCellProps) => {
-    return <div className="ProjectCell"><
-                div className="ProjectCellTitle">{title}</div>
-                <div style={{backgroundImage:"url("+image+")"}} />
-            </div>
+const ProjectCell = ({title,image, url}:ProjectCellProps) => {
+    return <a href={url} className="ProjectCell" style={{backgroundImage:"url("+image+")"}}>
+                <div className="ProjectCellTitle">{title}</div>
+            </a>
 };
+
+export default ProjectCell

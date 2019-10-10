@@ -1,17 +1,19 @@
 import React from 'react'
-import './Background.css'
+import '../../Theme.css'
 import {connect} from "react-redux";
 
 type BackgroundProps = {
   selectedView:string;
+  children: React.ReactNode;
 }
 
-const Background = ({selectedView}:BackgroundProps) => {
-  return <div className={"Background "+selectedView}/>
+const Background = ({children,selectedView}:BackgroundProps) => {
+  return <div className={"Background "+selectedView}><div className="BackgroundOverlay">{children}</div></div>
 };
 
 Background.defaultProps = {
-  selectedView: "Home"
+  selectedView: "Home",
+  children: []
 };
 
 const mapStateToProps = (state:any) =>

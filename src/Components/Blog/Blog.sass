@@ -1,0 +1,47 @@
+.Blog
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+
+.WorkingOnItTitle
+  width: 100%
+  text-align: justify
+  padding-left: 50%
+  color: white
+  font-size: 3rem
+  position: relative
+
+.WorkingOnIt
+  display: block
+  position: relative
+  width: 200px
+  height: 200px
+
+.WorkingOnItMain
+  width: 200px
+  height: 200px
+  position: absolute
+
+.WorkingOnItArm
+  position: absolute
+  width: 70px
+  top: 70px
+  right: -40px
+
+.LeftArm
+  animation: 1s 0.5s ease-out infinite MoveArm
+
+.RightArm
+  animation: 1s ease-out infinite MoveArm
+
+@keyframes MoveArm
+  0%
+    transform-origin: 5% 100%
+    transform: rotate(0)
+  50%
+    transform: rotate(-30deg)
+  100%
+    transform: rotate(0)

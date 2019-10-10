@@ -1,11 +1,12 @@
 .Navigation
-  width: 20%
-  left: -17%
+  width: 16rem
+  left: -13rem
   height: 100%
+  top: 0
   position: fixed
   transition: 0.5s
   background-color: rgba(0,0,0,0)
-  background-image: url("../../Static/MenuButton.svg")
+  background-image: url("./Images/MenuButton.svg")
   background-size: 15%
   background-position: top right
   background-repeat: no-repeat
@@ -14,22 +15,35 @@
     background-color: rgba(0,0,0,0.5)
     left: 0
 
+.Navigation-Small
+  position: absolute
+  width: 100vw
+  height: 5rem
+  bottom: 0
+  left: 0
+  display: flex
+  align-content: space-evenly
+  justify-content: space-evenly
+
 .NavigationIcon
   position: absolute
-  right: -7.5%
-  top: 10px
+  right: -1rem
+  top: 0.1rem
   width: 15%
   padding-top: 15%
-  background-image: url("../../Static/MenuButton.svg")
+  background-image: url("./Images/MenuButton.svg")
   background-size: contain
+  filter: invert(0)
   &:focus-within
     opacity: 0
 
 .NavigationItem
+  display: block
+  text-decoration: none
   width: 100%
   height: 65px
   line-height: 59px
-  font-size: 36px
+  font-size: 1.5rem
   color: white
   border-left-width: 0
   border-right-width: 0
@@ -39,11 +53,13 @@
   border-style: solid
   box-sizing: border-box
   transition: 0.2s
+  overflow: hidden
+  text-align: center
   background-color: rgba(255,255,255,0)
   &:Hover
     background-color: rgba(255,255,255,0.5)
   &.Selected
-    color: black
+    color: lightgray
     //border-left-width: 3px
     //border-right-width: 3px
     //border-bottom-width: 3px

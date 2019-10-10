@@ -1,0 +1,27 @@
+@function set-text-color($bgColor)
+  @return lighten($bgColor, 50%)
+
+@mixin set-background($color)
+  background-color: $color
+  color: set-text-color($color)
+
+.center-text-hz
+  text-align: center
+
+.full-width
+  width: 100%
+
+.show-on-small
+  display: none
+
+.hide-on-small
+  display: initial
+
+.spacing-5rem
+  padding: 2.5rem
+
+@keyframes animateOpacityIn
+  0%
+    opacity: 0
+  100%
+    opacity: 100%

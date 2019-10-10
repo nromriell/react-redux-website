@@ -1,0 +1,61 @@
+@import "../../ColorScheme"
+
+.HomePage
+  overflow: hidden
+  position: absolute
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: space-around
+  align-content: center
+  line-height: 5rem
+  & > p
+    color: $Scheme-Dark0
+    background-color: white
+
+.Empty
+  flex-basis: 80%
+
+.DetailInfo
+  flex-basis: 20%
+  background-color: $Scheme-FallRed
+  display: block
+  transition: linear 0.15s
+  animation: 0.5s ease-out forwards animateOpacityIn
+  & > h1
+    z-index: 100
+    color: $Scheme-Contrast
+    line-height: 2rem
+  & > h2
+    line-height: 1rem
+  &:hover
+    background-color: lighten($Scheme-FallRed, 5%)
+
+.ProfilePic
+  position: relative
+  display: inline-block
+  margin: 2rem auto auto auto
+  width: 70%
+
+  padding-top: 70%
+  border-radius: 50%
+  background-size: cover
+  background-repeat: no-repeat
+  transition: 0.1s
+  animation: 0.5s ease-out forwards animateOpacityIn
+  &:hover
+    filter: sepia(.2)
+
+.SocialIcons
+  padding-top: 2rem
+  display: flex
+  justify-content: space-evenly
+  align-content: center
+  animation: 0.5s ease-out forwards animateOpacityIn
+
+i
+  font-size: 3rem
+  color: rgba(255,255,255,0.7)
+  transition: 0.1s
+  &:hover
+    color: white

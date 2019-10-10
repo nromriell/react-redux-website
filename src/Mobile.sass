@@ -1,0 +1,36 @@
+@media(max-width: 1240px)
+  .DetailInfo
+    flex-basis: 35%
+
+@media(max-width: 800px)
+  .App
+    overflow: scroll
+  .DetailInfo
+    flex-basis: 100%
+    background-color: transparent
+    & > h1
+      color: $Scheme-FallOrange
+    & > h2
+      color: $Scheme-FallTan
+    & > h3
+      color: $Scheme-FallRed
+    &:hover
+      background-color: transparent
+  .Empty
+    flex-basis: 0
+  .ProfilePic
+    width: 20%
+    padding-top: 20%
+  .show-on-small
+    display: flex
+  .hide-on-small
+    display: none
+  i
+    font-size: 4rem
+  .AboutMe
+    position: relative
+    display: flex
+    flex-direction: column
+    height: content-box
+    overflow: auto
+    margin-bottom: 5rem

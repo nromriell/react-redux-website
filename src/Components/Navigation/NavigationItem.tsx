@@ -1,5 +1,6 @@
 import React from 'react'
 import {connect} from "react-redux";
+import {NavLink} from "react-router-dom";
 import Redux from 'redux'
 import {ChangeView} from "../../Redux/Actions";
 
@@ -11,7 +12,7 @@ type NavigationItemProps = {
 }
 
 const NavigationItem = ({title, identifier, activeView, changeView}:NavigationItemProps) => {
-  return <div onClick={changeView} className={identifier === activeView ? "NavigationItem Selected" : "NavigationItem"}>{title}</div>
+  return <NavLink to={title.toLowerCase().replace(" ", "")} onClick={changeView} className="NavigationItem" activeClassName="Selected">{title}</NavLink>
 };
 
 NavigationItem.defaultProps = {
